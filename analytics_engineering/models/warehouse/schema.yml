@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_customer
+    description: 'Tables that stores information about customers'
+    columns:
+    - name: customer_id
+      description: 'unique identifier for a customer'
+      data_tests:
+        - not_null
+        - unique
