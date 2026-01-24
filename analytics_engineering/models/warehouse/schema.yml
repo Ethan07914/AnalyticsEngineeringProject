@@ -2,10 +2,35 @@ version: 2
 
 models:
   - name: dim_customer
-    description: 'Tables that stores information about customers'
+    description: 'Table that stores information about customers'
     columns:
     - name: customer_id
       description: 'unique identifier for a customer'
       data_tests:
         - not_null
         - unique
+  - name: dim_date
+    description: 'Table that stores all the dates'
+    columns:
+    - name: id
+      description: 'Unique identifier for a date'
+      data_tests:
+        - not_null
+        - unique
+  - name: dim_employee
+    description: 'Table that stores information about employees'
+    columns:
+    - name: employee_id
+      description: 'Unique identifier for an employee'
+      data_tests:
+        - not_null
+        - unique
+  - name: dim_product
+    description: 'Table that stores  information about a product'
+    columns:
+    - name: product_id
+      description: 'Unique identifier for a product'
+      data_tests:
+        - not_null
+        - unique
+

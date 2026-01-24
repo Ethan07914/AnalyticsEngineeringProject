@@ -30,5 +30,5 @@ unique_source as (
 
 select *
     except(row_number)
-from unique_source
+from unique_source 
     where row_number = 1
